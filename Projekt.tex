@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\title{Wykrywacz Metali - Dokumentacja}
+\author{
+	Jakub Jaśków
+	\and
+	Justyna Ziemichód
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Funkcje Systemu}
+\begin{itemize}
+    \item Wykrywanie metali.
+    \item Zmiana tonacji dźwięku.
+    \item Czujnik odległości: Szacuje głębokość na której znajduje się wykryty obiekt.
+    \item Wybór systemu powiadomiania: dźwięk, wibracje, LED
+    \item Wybór czułości wykrywacza: większa czułość pozwala na wykrycie mniejszych lub słabiej przewodzących prąd obiektów. Skutkuje to jednak większą szansą odebrania zakłóceń.
+    \item Wybór rodzaju metalu (dyskryminacja): Użytkownik może wybrać wykrywany rodzaj metalu (żelazo, złoto, srebro itp.).
+\end{itemize}
+
+\section{Realizacja Założeń}
+	
+- Wykrywanie metali: Cewka wykrywacza wytwarza fale elektromagnetyczne, które przenikają do gruntu, oraz dobera fale elektromagnetyczne wzbudzone w obiekcie, które odbierane są przez tą samą cewkę. Sygnał jest następnie przekazywane do mikrokontrolera, który zamienia go na dane, które są w odpowieni sposób przetwarzane. Jeżeli mikrokontroler wykryje, że fale elektromagnetyczne zostały zakłócone w sposób odpowiadający wybranemu rodzaju metalu, to poinformuje użytkownika w wybranych przez niego sposób.
+\section{Środowisko i Ograniczenia}
+System może być używany w różnych warunkach, zarówno wewnątrz pomieszczeń, jak i na zewnątrz. Jednakże jego skuteczność może być ograniczona przez warunki otoczenia, takie jak obecność innych źródeł metalu, zakłócenia elektromagnetyczne, mineralizacja gleby lub woda.
+
+\section{Kategorie Użytkowników}
+System wykrywacza metali może być wykorzystywany przez różne grupy użytkowników, w tym:
+\begin{itemize}
+    \item \textbf{Ochroniarze}: Używają wykrywacza do przeszukiwania osób i bagaży w celu wykrycia niepożądanych przedmiotów metalowych.
+    \item \textbf{Poszukiwacze Skarbów}: Wykorzystują go do poszukiwania ukrytych obiektów metalowych, takich jak monety czy artefakty.
+    \item \textbf{Geodeci}: Mogą używać go do wykrywania ukrytych rur lub kabli pod ziemią.
+    \item\textbf{Śledczy}: Wykorzystują go do poszukiwania poszlak lub narzędzi zbrodni.
+\end{itemize}
+
+\end{document}
