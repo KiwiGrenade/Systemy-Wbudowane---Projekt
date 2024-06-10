@@ -1,7 +1,8 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-
+\usepackage{pdfpages}
+\usepackage{float}
 \title{Wykrywacz Metali - Dokumentacja}
 \author{
 	Jakub Jaśków
@@ -270,6 +271,11 @@ System wykrywacza metali może być wykorzystywany przez różne grupy użytkown
     \textbf{Przepływy alternatywne} & 1. Wyłącz urządzenie. \\ 2. Wyjmij i włóż ponownie akumulator. \\ 3. Włacz urządzenie.\\ 4.Sprawdź czy incydent się powtarza. \\ 5. Jeżeli tak - skontatkuj się z producentem. \\ \hline
     \end{tabular}
 \end{table}
+
+\clearpage
+\centering
+\includepdf[pages=-, pagecommand=\section{Diagram decyzyjny wykrywacza metalu}]{decision_tree.pdf}
+\clearpage
 
 
 
